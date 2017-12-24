@@ -1,0 +1,297 @@
+body {
+	padding:0px;
+	margin:0px;
+	font-family:tahoma,arial;
+	overflow:hidden;
+	background-color:black;
+}
+
+#container {
+	width:100%;
+	height:100%;
+	background-size: cover;
+	overflow:hidden;
+}
+
+.menubar {
+	z-index:10;
+	position:absolute;
+	height:25px;
+	text-align:right;
+	width:100vw;
+	overflow:hidden;
+	Bottom:0;
+	background: rgb(76,76,76);
+	background: -moz-linear-gradient(top, rgba(76,76,76,1) 0%, rgba(89,89,89,1) 12%, rgba(102,102,102,1) 25%, rgba(71,71,71,1) 39%, rgba(44,44,44,1) 50%, rgba(0,0,0,1) 51%, rgba(17,17,17,1) 60%, rgba(43,43,43,1) 76%, rgba(28,28,28,1) 91%, rgba(19,19,19,1) 100%);
+	background: -webkit-linear-gradient(top, rgba(76,76,76,1) 0%,rgba(89,89,89,1) 12%,rgba(102,102,102,1) 25%,rgba(71,71,71,1) 39%,rgba(44,44,44,1) 50%,rgba(0,0,0,1) 51%,rgba(17,17,17,1) 60%,rgba(43,43,43,1) 76%,rgba(28,28,28,1) 91%,rgba(19,19,19,1) 100%);
+	background: linear-gradient(to bottom, rgba(76,76,76,1) 0%,rgba(89,89,89,1) 12%,rgba(102,102,102,1) 25%,rgba(71,71,71,1) 39%,rgba(44,44,44,1) 50%,rgba(0,0,0,1) 51%,rgba(17,17,17,1) 60%,rgba(43,43,43,1) 76%,rgba(28,28,28,1) 91%,rgba(19,19,19,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313',GradientType=0 );
+}
+
+.menubarbutton {
+	z-index:15;
+	position:absolute;
+	height:25px;
+	width:110px;
+	Left:0;
+	overflow:hidden;
+	Bottom:0;
+	font-size:1.5vw;
+	text-align:center;
+	background: rgb(157,213,58);
+	background: -moz-linear-gradient(top, rgba(157,213,58,1) 0%, rgba(161,213,79,1) 50%, rgba(128,194,23,1) 51%, rgba(124,188,10,1) 100%);
+	background: -webkit-linear-gradient(top, rgba(157,213,58,1) 0%,rgba(161,213,79,1) 50%,rgba(128,194,23,1) 51%,rgba(124,188,10,1) 100%);
+	background: linear-gradient(to bottom, rgba(157,213,58,1) 0%,rgba(161,213,79,1) 50%,rgba(128,194,23,1) 51%,rgba(124,188,10,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9dd53a', endColorstr='#7cbc0a',GradientType=0 );
+	color:White;
+	font-weight:bolder;
+	cursor:pointer;
+	-moz-user-select: -moz-none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	font-family:tahoma;
+	font-size:21;
+}
+
+.menubarbutton:hover {
+	background: rgb(230,240,163);
+	background: -moz-linear-gradient(top, rgba(230,240,163,1) 0%, rgba(210,230,56,1) 50%, rgba(195,216,37,1) 51%, rgba(219,240,67,1) 100%);
+	background: -webkit-linear-gradient(top, rgba(230,240,163,1) 0%,rgba(210,230,56,1) 50%,rgba(195,216,37,1) 51%,rgba(219,240,67,1) 100%);
+	background: linear-gradient(to bottom, rgba(230,240,163,1) 0%,rgba(210,230,56,1) 50%,rgba(195,216,37,1) 51%,rgba(219,240,67,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6f0a3', endColorstr='#dbf043',GradientType=0 );
+}
+
+.menuWindow {
+  border-style: solid;
+  border-width: 1px;
+  position: absolute;
+  Bottom: 25px;
+  width: 240px;
+  background-color: rgba(205, 205, 255, 0.95);
+  overflow: hidden;
+  background: rgb(249, 252, 247);
+  background: -moz-linear-gradient(top, rgba(249, 252, 247, 1) 0%, rgba(245, 249, 240, 1) 100%);
+  background: -webkit-linear-gradient(top, rgba(249, 252, 247, 1) 0%, rgba(245, 249, 240, 1) 100%);
+  background: linear-gradient(to bottom, rgba(249, 252, 247, 1) 0%, rgba(245, 249, 240, 1) 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#f9fcf7', endColorstr='#f5f9f0', GradientType=0);
+	z-index:10;
+}
+
+
+.menuvak {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(230, 230, 255, 0.95);
+  float: left;
+  overflow-y: auto;
+  padding-left: 1%;
+  overflow-x: hidden
+	-moz-user-select: -moz-none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.menuitem {
+  width: 100%;
+  height: 34px;
+  margin-top: 8px;
+  cursor: pointer;
+	position:relative;
+}
+
+.notification {
+	font-weight:bold;
+	color:red;
+}
+
+.disabled {
+	color:gray;
+}
+
+.menuitem:hover {
+  background-color: rgba(250, 250, 255, 0.95)
+}
+
+.menuitem img {
+  width: 12.5%;
+  height: 90%;
+  vertical-align: middle;
+}
+
+.menuitemtext {
+  padding-left: 3%;
+}
+
+.window {
+	overflow-y:auto;
+}
+
+.frame {
+	max-width: 70vw;
+  max-height: 90vh;
+  resize: both;
+	width: 35vw;
+  height: 45vh;
+  position: absolute;
+	background: rgb(254, 255, 255);
+  background: -moz-linear-gradient(top, rgba(254, 255, 255, 1) 0%, rgba(242, 245, 247, 1) 35%, rgba(229, 233, 234, 1) 100%);
+  background: -webkit-linear-gradient(top, rgba(254, 255, 255, 1) 0%, rgba(242, 245, 247, 1) 35%, rgba(229, 233, 234, 1) 100%);
+  background: linear-gradient(to bottom, rgba(254, 255, 255, 1) 0%, rgba(242, 245, 247, 1) 35%, rgba(229, 233, 234, 1) 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#feffff', endColorstr='#e5e9ea', GradientType=0);
+  Top: 20%;
+  Left: 20%;
+  border-style: solid;
+  border-width: 1px;
+	overflow:hidden;
+}
+
+.mainMenuSpan {
+	position:absolute;
+	Bottom:10vh;
+	width:100vw;
+	text-align:center;
+	color:White;
+	cursor:pointer;
+	font-family:tahoma;
+}
+
+.topbar {
+  cursor: -webkit-grab;
+  cursor: grab;
+  position: relative;
+  width: 100%;
+  color: white;
+  font-weight: bold;
+  padding: 3 0;
+  font-family: arial;
+  font-size: 14;
+  background: rgb(30, 87, 153);
+  background: -moz-linear-gradient(top, rgba(30, 87, 153, 1) 0%, rgba(41, 137, 216, 1) 50%, rgba(32, 124, 202, 1) 51%, rgba(125, 185, 232, 1) 100%);
+  background: -webkit-linear-gradient(top, rgba(30, 87, 153, 1) 0%, rgba(41, 137, 216, 1) 50%, rgba(32, 124, 202, 1) 51%, rgba(125, 185, 232, 1) 100%);
+  background: linear-gradient(to bottom, rgba(30, 87, 153, 1) 0%, rgba(41, 137, 216, 1) 50%, rgba(32, 124, 202, 1) 51%, rgba(125, 185, 232, 1) 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8', GradientType=0);
+	-moz-user-select: -moz-none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.windowControl {
+  text-align: right;
+  position: absolute;
+  right: 0px;
+  Right: 0.75%;
+}
+.windowControl img {
+  cursor: pointer
+}
+.notepad {
+	resize:none;
+	-webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+	width:100%;
+	height:90%
+}
+
+#mailtable {
+	width:100%;
+	table-layout:fixed;
+}
+
+#mailtable input {
+	width:100%;
+}
+
+.mailcontent {
+	border-style:solid;
+	border-width:1px;
+	border-color:rgb(100,100,100);
+}
+
+.emailintable:nth-child(even) {background: #99F}
+.emailintable:nth-child(odd) {background: #88C}
+.musicLibraryFile {
+	color:rgb(0,0,250);
+	cursor:pointer;
+}
+.internetAdventurerAdressbar {
+	width:99%;
+	border-bottom-style:solid;
+	border-color:rgb(150,150,150);
+	background-color:rgba(120,120,120,0.1);
+	padding:6 5;
+	position:relative;
+}
+
+.internetAdventurerAdressbar select {
+	width:93%;
+}
+
+.internetAdventurerAdressbar img {
+	width:22px;
+	position:absolute;
+	Right:5;
+	resize:none;
+	Left:auto;
+	cursor:pointer;
+}
+
+.internetPage {
+	margin-top:5;
+	padding-left:5;
+	height:100%;
+}
+
+.messengerFriends {
+	position:absolute;
+	Left:0;
+	width:30%;
+	background-color:rgba(0,0,255,0.2);
+	color:white;
+	padding:0.5%;
+}
+
+.messengerChat {
+	Right:0;
+	position:absolute;
+	width:68%;
+	background-color:rgba(0,0,255,0.1);
+	padding:0.5%;
+	overflow-y:auto;
+	height:98%;
+}
+
+.friend {
+	width:100%;
+	padding:4%;
+	color:black;
+}
+
+.friend:hover {
+	background-color:rgba(255,255,255,0.1);
+	cursor:pointer;
+}
+
+#chatArea {
+	overflow-y:auto;
+	overflow-x:hidden;
+}
+
+.chatInput {
+	padding:1.25%;
+}
+
+.chatInput input[type=text] {
+	padding:1%;
+	width:85%;
+}
+
+.chatInput input[type=submit] {
+	padding:1%;
+	width:15%;
+}
